@@ -74,13 +74,29 @@ body {
     text-align: center;
 }
 .auth-container .auth-card .auth-form .info > * {
-    margin: 1em;
+    margin: .5em;
 }
 .auth-container .auth-card .auth-form .info p {
     font-size: 0.9em;
     margin-bottom: 0.5em;
 }
+.auth-container .auth-card .auth-form .errors {
+    background: rgba(255, 87, 49, 0.5);;
 
+    margin: 5px 3em;
+    padding: .7em;
+
+    display: flex;
+    align-items: center;
+}
+.auth-container .auth-card .auth-form .errors span {
+    width: 15%;
+}
+.auth-container .auth-card .auth-form .errors p {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
 .auth-container .auth-card .auth-form .form-row {
     margin: 5px 3em;
     padding: 5px 0;
