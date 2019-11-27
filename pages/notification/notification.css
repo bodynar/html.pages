@@ -1,0 +1,40 @@
+body {
+    background: gray;
+}
+
+.container {
+    margin: auto;
+    height: 60vh;
+    width: 60vw;
+    border: 1px solid black;
+    position: relative;
+    top: 15vh;
+    background: #E9E9E9;
+    padding: 40px;
+}
+.container > * {
+    margin-bottom: 20px;
+}
+
+.notification {
+    background: #fff;
+    border-left-width: 0.5em;
+    border-left-style: solid;
+    border-left-color: #D3DDE6;
+    border-radius: 8px;
+
+    width: 100%;
+    height: auto;
+}
+.notification.error {
+    border-left-color: rgb(238, 113, 85);
+}
+.notification.warning {
+    border-left-color: #FCC07E;
+}
+.notification.success {
+    border-left-color: rgb(126, 197, 68);
+}
+.notification .notification-body {
+    padding: 0.5em;
+}
