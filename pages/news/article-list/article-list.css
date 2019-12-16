@@ -1,26 +1,147 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* FIX THAT */
 }
 
 header {
-    background: rgb(80, 80, 80);
-    padding: 0.5em 1em;
+    background: rgb(70, 70, 70);
     color: white;
-    width: 100vw;
+    width: 100%;
+}
+
+header nav {
+    padding: 0.5em 0 0.5em 1em;
 }
 
 .main-container {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 10em;
+    margin-right: 10em;
     margin-top: 1em;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.main-container .filters {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container .filters .search {
+    width: 2%;
+}
+
+.main-container .filters .search i {
+    color: #009eda;
+}
+
+.main-container .filters select {
+    width: 10%;
+}
+
+.main-container .filters .all-articles {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.main-container .filters .all-articles input[type="checkbox"] {
+    border: 1px solid grey;
+    background: none;
+}
+.main-container .filters .all-articles input[type="checkbox"]:hover {
+    border: 1px solid #009eda;
+}
+.main-container .filters .all-articles label {
+    cursor: pointer;
+    user-select: none;
+}
+.main-container .articles {
+    padding: 1em 0;
+}
+
+.main-container .articles .article {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid grey;
+}
+
+.main-container .articles .article:last-of-type {
+    border-bottom: 1px solid grey;
+}
+
+.main-container .articles .article .category {
+    width: 7%;
+    text-align: center;
+}
+
+.main-container .articles .article .info {
+    width: 93%;
+}
+
+.main-container .articles .article .category, .main-container .articles .article .info {
+    padding: 0.8em 0;
+}
+
+.main-container .articles .article .info h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container .articles .article .info p {
+    margin: 0;
+    padding: 0.7em 0;
+}
+
+.main-container .articles .article .info .post-information a {
+    color: grey;
+    text-decoration: none;
+}
+
+.main-container .articles .article .info .post-information a:hover {
+    color: blue;
+}
+
+.main-container .paginator {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    padding: 0.5em 1em;
-    border: 1px solid black;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-container .paginator label {
+    width: 6%;
+    color: gray;
+}
+
+.main-container .paginator input[type="number"] {
+    width: 2.5%;
+    text-align: center;
+}
+
+.main-container .paginator .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.7em;
+    user-select: none;
+}
+
+.main-container .paginator .navigation button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.4em 0.6em;
+    margin: 1px;
+}
+
+.main-container .paginator .navigation button:focus {
+    outline: none;
+}
+
+.main-container .paginator .navigation button:hover {
+    color: #009eda;
+    border: 1px solid #009eda;
+    border-radius: 2px;
+    margin: 0;
 }
