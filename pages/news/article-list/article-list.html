@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="article-list.css">
+    <title>Article list</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            News portal
+        </nav>
+    </header>
+    <section class="main-container">
+        <section>
+            <div class="search">
+                <i class="icon"></i>
+            </div>
+            <select>
+                <option><span> d/ </span> date asc</option>
+                <option><span> d\ </span> date desc</option>
+                <option><span> p/ </span> popularity asc</option>
+                <option><span> p\ </span> popularity desc</option>
+            </select>
+            <div class="all-articles">
+                <input type="checkbox"/>
+                <label> All articles </label>
+            </div>
+        </section>
+        <section>
+            <article class="article">
+                <span class="category"> Category </span>
+                <div class="info">
+                    <h2 class="name"> Article name </h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quisquam
+                        delectus veniam, laborum amet corporis sit asperiores excepturi doloribus adipisci harum impedit
+                        temporibus dignissimos</p>
+                    <div class="post-information">
+                        <a href="mailto:test@test.com">Author author</a>
+                        <a href="#">11 of March</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="paginator">
+            <label></label>
+            <select></select>
+            <button class="arrow-left"></button>
+            <section class="pages"></section>
+            <button class="arrow-right"></button>
+        </section>
+    </section>
+    <footer>
+        footer (c) 2020
+    </footer>
+</body>
+
+</html>
