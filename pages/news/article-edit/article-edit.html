@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="article-edit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Article edit modal</title>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+
+    <header>
+        <nav>
+            News portal
+        </nav>
+    </header>
+    <section class="modal">
+        <div class="modal-header">
+            <span>Edit article</span>
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="group">
+                        <label for="author" class="input-label">Author</label>
+                        <input class="input-control" type="text" name="author" id="author" value="John Doe"/>
+                    </div>
+                    <div class="group">
+                        <label for="category" class="input-label">Category</label>
+                        <input class="input-control"  type="text" name="category" id="category" value="Modal dialogs"/>
+                    </div>
+                    <div class="group">
+                        <label for="publish-date" class="input-label">Publish date</label>
+                        <input class="input-control"  type="date" name="publish-date" id="publish-date" value="1999-01-01"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <div class="input-label">Article name</div>
+                        <textarea class="input-control" name="article-name" id="article-name" rows="3">Article name</textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="group">
+                        <div class="input-label">Article</div>
+                        <textarea class="input-control" name="article" id="article" rows="15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum dui faucibus in ornare quam viverra orci sagittis. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Diam quam nulla porttitor massa. Ut morbi tincidunt augue interdum. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Pharetra sit amet aliquam id. Tincidunt eget nullam non nisi est sit amet facilisis. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nam aliquam sem et tortor. Tristique senectus et netus et malesuada. Semper quis lectus nulla at volutpat diam ut venenatis tellus. Praesent elementum facilisis leo vel fringilla est ullamcorper. Tellus mauris a diam maecenas sed. Eu non diam phasellus vestibulum lorem sed.
+Pharetra convallis posuere morbi leo urna molestie. Suspendisse potenti nullam ac tortor vitae purus. Urna condimentum mattis pellentesque id. Nulla aliquet enim tortor at auctor urna. Pharetra vel turpis nunc eget. Volutpat maecenas volutpat blandit aliquam etiam. Adipiscing tristique risus nec feugiat in fermentum posuere. Ac turpis egestas integer eget. Sed velit dignissim sodales ut eu sem. Egestas dui id ornare arcu odio ut sem nulla. Convallis a cras semper auctor neque vitae tempus.
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="actions">
+                <button class="btn btn-primary">Save</button>
+                <button class="btn">Cancel</button>
+            </div>
+        </div>
+    </section>
+    <section class="main-container">
+        <article>
+            <h1> Article name </h3>
+            <div class="information">
+                <span class="category"> Category </span>
+                <div class="links">
+                    <a href="mailto:test@test.com">Author author</a>
+                    -
+                    <a href="#">11 of March</a>
+                </div>
+                <span class="actions edit">
+                    <i class="fa fa-pencil"></i>
+                    <a href="#"> Edit </a>
+                </span>
+                <span class="actions delete">
+                    <i class="fa fa-trash"></i>
+                    <a href="#"> Delete </a>
+                </span>
+            </div>
+            <p class="article-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum dui faucibus in ornare quam viverra orci sagittis. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Diam quam nulla porttitor massa. Ut morbi tincidunt augue interdum. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Pharetra sit amet aliquam id. Tincidunt eget nullam non nisi est sit amet facilisis. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nam aliquam sem et tortor. Tristique senectus et netus et malesuada. Semper quis lectus nulla at volutpat diam ut venenatis tellus. Praesent elementum facilisis leo vel fringilla est ullamcorper. Tellus mauris a diam maecenas sed. Eu non diam phasellus vestibulum lorem sed.
+
+Pharetra convallis posuere morbi leo urna molestie. Suspendisse potenti nullam ac tortor vitae purus. Urna condimentum mattis pellentesque id. Nulla aliquet enim tortor at auctor urna. Pharetra vel turpis nunc eget. Volutpat maecenas volutpat blandit aliquam etiam. Adipiscing tristique risus nec feugiat in fermentum posuere. Ac turpis egestas integer eget. Sed velit dignissim sodales ut eu sem. Egestas dui id ornare arcu odio ut sem nulla. Convallis a cras semper auctor neque vitae tempus.
+            </p>
+        </article>
+    </section>
+</body>
+
+</html>
