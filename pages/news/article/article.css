@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* FIX THAT */
+}
+
+header {
+    background: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+}
+
+header nav {
+    padding: 0.5em 0 0.5em 1em;
+}
+
+.main-container {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+}
+
+.main-container article {
+    padding: 1em 0;
+}
+
+.main-container article .information {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container article h1 {
+    font-size: 2rem;
+}
+
+.main-container article h1, .main-container article .information {
+    margin: 0.5em 0;
+}
+
+.main-container article .information a {
+    text-decoration: none;
+}
+
+.main-container article .information a:hover {
+    text-decoration: underline;
+}
+
+.main-container article .information .category {
+    width: 5em;
+}
+
+.main-container article .information .links {
+    width: 12.5em;
+}
+
+.main-container article .information .links a {
+    color: grey;
+}
+
+.main-container article .information .links a:hover {
+    text-decoration: underline;
+}
+.main-container article .information .actions {
+    width: 4em;
+}
+.main-container article .information .edit {
+    color: #009eda;
+}
+.main-container article .information .delete {
+    color: #f95c5c;
+}
+
+.main-container article .information .edit a {
+    color: #009eda;
+}
+.main-container article .information .delete a {
+    color: #f95c5c;
+}
+
+.main-container article .information .edit a:hover, 
+.main-container article .information .delete a:hover {
+    text-decoration: underline;
+}
