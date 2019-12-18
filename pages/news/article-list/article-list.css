@@ -75,6 +75,12 @@ header nav {
     width: 6em;
     text-align: center;
 }
+.main-container .articles .article .category span {
+    cursor: pointer;
+}
+.main-container .articles .article .category span:hover {
+    font-weight: bold;
+}
 
 .main-container .articles .article .info {
     width: fit-content;
@@ -84,9 +90,13 @@ header nav {
     padding: 0.8em 0;
 }
 
-.main-container .articles .article .info h2 {
+.main-container .articles .article .info h2.name {
     margin: 0;
     padding: 0;
+    cursor: pointer;
+}
+.main-container .articles .article .info h2.name:hover {
+    text-decoration: underline;
 }
 
 .main-container .articles .article .info p {
