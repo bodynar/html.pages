@@ -4,6 +4,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     /* FIX THAT */
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -52,7 +53,7 @@ header nav {
 }
 
 .main-container article .information .links {
-    width: 12.5em;
+    width: 14em;
 }
 
 .main-container article .information .links a {
@@ -82,4 +83,7 @@ header nav {
 .main-container article .information .edit a:hover, 
 .main-container article .information .delete a:hover {
     text-decoration: underline;
+}
+.main-container article p {
+    white-space: pre-line;
 }

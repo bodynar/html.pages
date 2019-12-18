@@ -4,6 +4,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     /* FIX THAT */
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -29,7 +30,7 @@ header nav {
 }
 
 .main-container .filters .search {
-    width: 2%;
+    width: 2em;
 }
 
 .main-container .filters .search i {
@@ -71,12 +72,12 @@ header nav {
 }
 
 .main-container .articles .article .category {
-    width: 7%;
+    width: 6em;
     text-align: center;
 }
 
 .main-container .articles .article .info {
-    width: 93%;
+    width: fit-content;
 }
 
 .main-container .articles .article .category, .main-container .articles .article .info {
@@ -111,12 +112,12 @@ header nav {
 }
 
 .main-container .paginator label {
-    width: 6%;
+    width: 6em;
     color: gray;
 }
 
 .main-container .paginator input[type="number"] {
-    width: 2.5%;
+    width: 2.5em;
     text-align: center;
 }
 
