@@ -1,0 +1,21 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+}
+.row > * {
+    margin: 0 8px;
+}
+
+.form-input {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;;
+}
