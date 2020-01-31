@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 id="title">Lorem ipsum</h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <form action="/" id="survey-form">
+            <div class="row">
+                <label for="name" id="name-label">Your name:</label>
+                <input class="form-input" type="text" name="name" id="name" required="required" placeholder="John Doe">
+            </div>
+            <div class="row">
+                <label for="email" id="email-label">Your email:</label>
+                <input class="form-input" type="email" name="email" id="email" required="required"
+                    placeholder="email@example.com">
+            </div>
+            <div class="row">
+                <label for="name" id="number-label">Your rate-feedback:</label>
+                <input class="form-input" type="number" name="number" id="number" min="0" max="10" placeholder="9">
+            </div>
+            <div class="row">
+                <label for="dropdown" id="dropdown-label">Your favorite part:</label>
+                <select class="form-input" name="dropdown" id="dropdown">
+                    <option value="Lorem">Lorem</option>
+                    <option value="ipsum">ipsum</option>
+                    <option value="dolor">dolor</option>
+                    <option value="sit">sit</option>
+                    <option value="amet">amet</option>
+                    <option value="consectetur">consectetur</option>
+                    <option value="adipisicing">adipisicing</option>
+                    <option value="elit">elit</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="name" id="name-label">Any pets?:</label>
+                <input type="checkbox" name="dogs" id="pets_dogs" value="dogs">
+                <input type="checkbox" name="cats" id="pets_cats" value="cats">
+                <input type="checkbox" name="none" id="pets_none" value="none">
+            </div>
+            <div class="row">
+                <label for="name" id="name-label">Sex:</label>
+                <input type="radio" name="sex" id="male" value="maile"> Male
+                <input type="radio" name="sex" id="female" value="female"> Female
+            </div>
+            <textarea name="" id="" cols="30" rows="50"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

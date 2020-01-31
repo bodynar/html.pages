@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+header .logo {
+    height: 100%;
+    margin-left: 3em;
+}
+header .logo img {
+    width: auto;
+    height: 100%;
+}
+header .controls {
+    width: 25vw;
+    height: 100%;
+}
+header .controls nav {
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+}
+nav > * {
+    margin: 0 0.5em;
+}
+nav a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    padding: 0 1em;
+    align-items: center;
+    transition: 0.1s ease-in border-bottom, 0.1s ease-in color;
+}
+nav a:hover {
+    border-bottom: 2px solid blue;
+    color:blue;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+}
+.row > * {
+    margin: 0 8px;
+}
+
+.form-input {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+@media(min-width: 500px) {
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 200px) {
+    body {
+        margin: 0;
+    }
+}
