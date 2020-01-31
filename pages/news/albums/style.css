@@ -1,0 +1,145 @@
+/* #region preset */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* FIX THAT */
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    background: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+}
+header nav {
+    padding: 0.5em 0 0.5em 1em;
+}
+
+.main-container {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+}
+
+/* #endregion preset */
+
+/* #region albums */
+.albums {
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 22em);
+    grid-gap: 1.5em;
+    justify-items: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.album {
+    border: 1px solid black;
+    border-radius: 2px;
+    max-width: 21em;
+    user-select: none;
+}
+.album .preview .overlay {
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.album img {
+    transition: .5s ease;
+}
+.album:hover {
+    cursor: pointer;
+}
+.album:hover .overlay {
+    opacity: 0.6;
+}
+.album:hover img {
+    opacity: 0.3;
+}
+
+.album .preview {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.album .description {
+    text-align: center;
+    color: rgb(70, 70, 70);
+    padding: 0 1em;
+    margin: 0;
+    border-top: 1px solid black;
+}
+
+.album .description p span {
+    display: inline-block;
+}
+.album .description p span:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 0.3s;
+}
+.album:hover .description p span:after {
+    width: 100%;
+}
+/* #endregion albums */
+
+/* #region paginator */
+.main-container .paginator {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-container .paginator label {
+    width: 6em;
+    color: gray;
+}
+
+.main-container .paginator input[type="number"] {
+    width: 2.5em;
+    text-align: center;
+}
+
+.main-container .paginator .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.7em;
+    user-select: none;
+}
+
+.main-container .paginator .navigation button {
+    color: black;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.4em 0.6em;
+    margin: 1px;
+}
+
+.main-container .paginator .navigation span {
+    padding: 0.1em;
+}
+
+.main-container .paginator .navigation button:focus {
+    outline: none;
+}
+
+.main-container .paginator .navigation button:hover {
+    color: #009eda;
+    border: 1px solid #009eda;
+    border-radius: 2px;
+    margin: 0;
+}
+/* #endregion paginator */
