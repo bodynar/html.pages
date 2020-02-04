@@ -73,7 +73,11 @@ header nav {
 .action-bar .search button:active, .action-bar .search input[type='search']:active {
     border-color: rgba(0, 220, 255, 0.5);
 }
+.action-bar .search button:active {
+    background: rgba(0, 0, 0, 0.1);
+}
 /* #endregion search */
+/* #region show-all */
 .action-bar .show-all {
     display: flex;
     user-select: none;
@@ -116,6 +120,32 @@ header nav {
 .action-bar .show-all input:checked:active + span {
     background: rgba(0, 0, 0, 0.05);
 }
+/* #endregion show-all */
+
+/* #region add */
+.action-bar .add button {
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 0.4em 0.8em;
+    transition: 0.2s ease;
+}
+.action-bar .add button:focus {
+    outline: none;
+}
+.action-bar .add button:hover {
+    border-color: black;
+    color: black;
+}
+.action-bar .add button:active {
+    background: rgba(0, 0, 0, 0.06);
+}
+.action-bar .add button i {
+    margin: 0 5px;
+}
+/* #endregion add */
 /* #endregion action bar */
 /* #region albums */
 .albums {
