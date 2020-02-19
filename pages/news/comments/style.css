@@ -1,0 +1,138 @@
+/* #region preset */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* FIX THAT */
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    background: rgb(70, 70, 70);
+    color: white;
+    width: 100%;
+}
+
+header nav {
+    padding: 0.5em 0 0.5em 1em;
+}
+
+.main-container {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+}
+
+/* #endregion preset */
+
+.content {
+    height: 50vh;
+    width: 85vw;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1em;
+
+    background: rgb(51,249,165);
+    background: linear-gradient(90deg, rgba(51,249,165,0.5032387955182073) 0%, 
+        rgba(74,255,248,0.5032387955182073) 50%, 
+        rgba(0,157,255,0.49763655462184875) 100%);
+}
+
+/* #region comments */
+
+.comments-container {
+    border: 2px solid rgba(3, 121, 156, 0.25);
+    padding: 1em;
+}
+
+/* #region add-comment */
+
+.comments-container .add-comment {
+    margin: 1em 0;
+}
+
+.comments-container .add-comment .pseudo-input {
+    background-color: #fff;
+    padding: 7px 15px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.comments-container .add-comment .pseudo-input span {
+    font-size: 0.95em;
+    line-height: 34px;
+    color: #818181;
+}
+
+/* #endregion add-comment */
+
+.comments-container .comments {
+
+}
+
+.comments-container .comments .comment {
+    padding: 0.8em;
+}
+
+.comments-container .comments .comment .info {
+    display: inline;
+}
+.comments-container .comments .comment .info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.comments-container .comments .comment span:not(.action) {
+    font-size: 0.9em;
+    color: gray;
+    user-select: none;
+    cursor: pointer;
+}
+.comments-container .comments .comment .text {
+
+}
+.comments-container .comments .comment .text p {
+    margin: 0;
+    padding: 0.8em 0;
+}
+.comments-container .comments .comment .interact {
+    padding-bottom: 0.5em;
+}
+.comment .replies-container {
+    position: relative;
+
+}
+.comment .replies-container .replies {
+    padding-left: 1.5em;
+    border-left: 1px dashed #ccc;
+}
+.comment .replies-container .comments-tree-trunk {
+    display: none;
+    position: absolute;
+    width: 32px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.comment .replies-container .comments-tree-trunk:hover {
+    border-left: 2px solid #4086e0;
+}
+.comment .replies-container:hover .comments-tree-trunk {
+    display: block;
+}
+
+.comment .replies-container span.action {
+    cursor: pointer;
+    color: #4086e0;
+}
+.comment .replies-container span.action:hover {
+    color: red;
+}
+.comment .replies-container span.action:active {
+    color: #a50000;
+}
+/* #endregion comments */
