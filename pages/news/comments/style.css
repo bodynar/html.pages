@@ -25,6 +25,39 @@ header nav {
     margin-top: 1em;
 }
 
+
+button.btn {
+    border: 1px solid #009eda;
+    border-radius: 4px;
+    color: #009eda;
+    background: white;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding: 0.3em 1em;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.95em;
+}
+
+button.btn:hover {
+    background: #0082b3;
+    color: white;
+}
+
+button.btn:focus {
+    outline: none;
+    box-shadow: 0 0 3px 0px #009eda
+}
+
+button.btn.btn-primary {
+    color: white;
+    background: #009eda;
+}
+
+button.btn.btn-primary:hover {
+    color: white;
+    background: #0082b3;
+}
+
 /* #endregion preset */
 
 .content {
@@ -45,6 +78,8 @@ header nav {
 .comments-container {
     border: 2px solid rgba(3, 121, 156, 0.25);
     padding: 1em;
+    width: 50vw;
+    margin: auto;
 }
 
 /* #region add-comment */
@@ -53,7 +88,7 @@ header nav {
     margin: 1em 0;
 }
 
-.comments-container .add-comment .pseudo-input {
+.comments-container .add-comment .add-comment-container {
     background-color: #fff;
     padding: 7px 15px;
     border: 1px solid rgba(0,0,0,.1);
@@ -61,17 +96,51 @@ header nav {
     cursor: pointer;
 }
 
-.comments-container .add-comment .pseudo-input span {
+.comments-container .add-comment .add-comment-container .pseudo-input-mask span {
     font-size: 0.95em;
     line-height: 34px;
     color: #818181;
+    pointer-events: none;
+}
+
+.comments-container .add-comment .add-comment-container:not(.mask) .pseudo-input-mask span {
+    display: none;
+    position: absolute;
+}
+
+.comments-container .add-comment .add-comment-container:not(.not-empty) .pseudo-input-mask span {
+    display: block;
+}
+
+.comments-container .add-comment .add-comment-container .pseudo-input-container {
+
+}
+
+.comments-container .add-comment .add-comment-container .pseudo-input-container .pseudo-input {
+    padding-bottom: 1.5em;
+    outline: 0;
+    padding-top: 7px;
+    font-size: 0.95em;
+}
+
+.comments-container .add-comment .add-comment-container .pseudo-input-container .pseudo-input-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comments-container .add-comment .add-comment-container .pseudo-input-container .pseudo-input-actions > * {
+    width: 6em;
 }
 
 /* #endregion add-comment */
 
+/* #region comments */
+
 .comments-container .comments {
 
 }
+
+/* #region comment  */
 
 .comments-container .comments .comment {
     padding: 0.8em;
@@ -85,12 +154,13 @@ header nav {
     color: black;
     font-weight: bold;
 }
-.comments-container .comments .comment span:not(.action) {
+.comments-container .comments .comment span {
     font-size: 0.9em;
     color: gray;
-    user-select: none;
     cursor: pointer;
+    user-select: none;
 }
+
 .comments-container .comments .comment .text {
 
 }
@@ -125,14 +195,18 @@ header nav {
     display: block;
 }
 
-.comment .replies-container span.action {
+.comment .replies-container > span.action {
     cursor: pointer;
     color: #4086e0;
 }
-.comment .replies-container span.action:hover {
+
+.comments-container .comments .comment span.action:hover {
     color: red;
 }
-.comment .replies-container span.action:active {
+.comments-container .comments .comment span.action:active {
     color: #a50000;
 }
+
+/* #endregion comment */
+
 /* #endregion comments */
